@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/home.css' )}}">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <style> 
+    .carousel-item img {
+        max-height: 550px; /* Adjust the height as needed */
+        width: auto;
+        margin: 0 auto; /* Center the image horizontally */
+    }
+    </style>
+</head>
+
+<body class="background-image">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <!-- Change the navbar-custom class to customize navbar color -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{{url_for('home')}}">UniVoteHub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+                <!-- Logout button -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('signin_layout')}}"><button type="submit" class="sign-in">Sign In</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{ url_for('static', filename='images/1.png') }}" class="d-block w-100" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/3.png') }}" class="d-block w-100" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/4.webp') }}" class="d-block w-100" alt="Image 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container home-container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Welcome to UniVoteHub</h1>
+                <p>A cutting-edge platform tailored to meet the unique needs of academic institutions. Our system empowers students, faculty, and staff to participate in campus elections and decision-making processes with ease and convenience. Whether it's
+                    electing student representatives, approving academic policies, or choosing campus initiatives, our secure and user-friendly interface ensures that every member of the university community can make their voice heard. With features such
+                    as two-factor authentication and real-time result tracking, we prioritize the integrity and transparency of the voting process. Join us in fostering a culture of engagement and democracy within our academic community, where every vote
+                    counts towards shaping the future of our institution.The proposed Online Voting System automates the current voting process for nominating and electing members of society teams, and office bearers at the college or university level.
+                    Developed in Python, the app will address the critical need for enhanced election safety and security. It leverages cutting-edge science and technology for a sustainable future. This web-based solution features Admin and User modules.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container about-container" id="about">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>About</h1>
+                <p>Our system empowers students, faculty, and staff to participate in campus elections and decision-making processes with ease and convenience. Whether it's electing student representatives, approving academic policies, or choosing campus
+                    initiatives, our secure and user-friendly interface ensures that every member of the university community can make their voice heard. With features such as two-factor authentication and real-time result tracking, we prioritize
+                    the integrity and transparency of the voting process. Join us in fostering a culture of engagement and democracy within our academic community, where every vote counts towards shaping the future of our institution</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container key-features-container" id="features">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Key features</h1>
+                <p>The key features of the proposed solution include- two-factor authentication, an increase in voting percentage, reduction in paper wastage lowering carbon usage, thus adhering to sustainability. In a nutshell, the proposed solution
+                    will have a drastic advancement in technology and lead to the minimal impact of electronic voting on the environment. The project may be extended to incorporate face recognition technology; and use Blockchain technology and Encryption
+                    techniques to ensure transparency, security, and immutability of votes.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Watch the demo of the website</h2>
+                <a href="{{url_for('demo')}}" class="btn-watch-demo">Watch Demo</a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="footer-basic" id="contact">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">UniVoteHub © 2024</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-hHLM9X6JrJOh4fXiZCi0FEGUOePPusYu9h72IKS8qHge5f6zKT6ZzJ00vy6Hm0Sz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            color: initial !important;
+        }
+    </style>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.background-image {
+    background-color: #F5E8DD;
+    /* background-image: url('bg.png'); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: black;
+    text-align: center;
+}
+
+.navbar-custom {
+    background-color: #B5C0D0;
+}
+
+.heading {
+    padding: 20px 0;
+}
+
+.container {
+    text-align: justify;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.candidates-details {
+    background-color: #CCD3CA;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+    color: #FF7F11;
+}
+
+h2 {
+    color: #FF7F11;
+}
+
+button {
+    padding: 10px 20px;
+    border: 2px solid #1658aa;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: transparent;
+    color: #1658aa;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #1658aa;
+    color: white;
+}

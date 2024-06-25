@@ -1,0 +1,85 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.background-image {
+    /* background-image: url('bg.png'); */
+    background-color: #F5E8DD;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: black;
+    text-align: center;
+}
+
+.navbar-custom {
+    background-color: #B5C0D0;
+    width: 100%;
+}
+
+.container {
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+form label {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+form input,
+form button {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+form button {
+    margin-top: 15px;
+    background-color: #1658aa;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+form button:hover {
+    opacity: 0.8;
+}
+
+.row.justify-content-center {
+    margin-top: 50px;
+}
+
+.candidates-details {
+    background-color: #CCD3CA;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+}

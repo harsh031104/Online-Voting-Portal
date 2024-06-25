@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Profile</title>
+</head>
+<body>
+    <center>
+        <h1>Welcome to your Profile, {{ admin.username }}</h1>
+    </center>
+    <div>
+        <h2>Profile Information</h2>
+        <p>Username: {{ admin.username }}</p>
+        <!-- Add more profile information here as needed -->
+    </div>
+    <div>
+        <h2>Your Elections</h2>
+        <ul>
+            {% for election in elections %}
+            <li>{{ election.name }} - Created by: {{ election.admin.username }} - {{ election.start_time }}</li>
+            <!-- Add more election details here as needed -->
+            {% endfor %}
+        </ul>
+    </div>
+    <div>
+        <button onclick="window.location.href='/view_elections'">View Elections</button>
+    </div>
+    <form action="{{ url_for('logout') }}" method="post">
+    <button type="submit">Logout</button>
+</body>
+</html>

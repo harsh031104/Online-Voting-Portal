@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Election</title>
+</head>
+<body>
+    <h1>View Election</h1>
+    <h2>Previous Election: {{ elections.name }}</h2>
+
+    <h3>Candidates:</h3>
+    <ul>
+        {% for candidate in elections.candidates %}
+            <li>
+                <strong>Name:</strong> {{ candidate.name }}<br>
+                <strong>Description:</strong> {{ candidate.description }}<br>
+                <strong>Image URL:</strong> {{ candidate.image_url }}<br>
+                <strong>Votes:</strong> {{ candidate.votes }}<br>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <h3>Result:</h3>
+    <!-- Display the winner or any other relevant information about the result here -->
+
+    {% if elections.ongoing %}
+        <form action="{{ url_for('end_session', election_id=election.id) }}" method="POST">
+            <button type="submit">End Session</button>
+        </form>
+    {% else %}
+        <p>Voting session ended.</p>
+    {% endif %}
+</body>
+</html>
+

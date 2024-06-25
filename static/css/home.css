@@ -1,0 +1,135 @@
+.background-image {
+    background-color: #F5E8DD;
+    text-align: center;
+}
+
+.navbar-custom {
+    background-color: #B5C0D0;
+    width: 100%;
+}
+
+.container {
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.home-container {
+    background-color: #CCD3CA;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.about-container {
+    background-color: #CCD3CA;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.key-features-container {
+    background-color: #CCD3CA;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.sign-in {
+    padding: 10px 20px;
+    border: 2px solid #1658aa;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: transparent;
+    color: #1658aa;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+}
+
+.sign-in:hover {
+    background-color: #1658aa;
+    color: white;
+}
+
+.btn-watch-demo {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-watch-demo:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* footer */
+.footer-basic {
+    padding:40px 0;
+    color:black;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:black;
+    margin-bottom:0;
+  }

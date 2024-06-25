@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/features.css' )}}">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="background-image">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <!-- Change the navbar-custom class to customize navbar color -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{{url_for('home')}}">UniVoteHub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="{{url_for('home')}}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('about')}}">About</a>
+                    </li>
+                </ul>
+                <!-- Logout button -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('signin_layout')}}"><button type="submit">Sign In</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <div class="container key-features-container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>Key features</h1>
+                    <p>The key features of the proposed solution include- two-factor authentication, an increase in voting percentage, reduction in paper wastage lowering carbon usage, thus adhering to sustainability. In a nutshell, the proposed solution
+                        will have a drastic advancement in technology and lead to the minimal impact of electronic voting on the environment. The project may be extended to incorporate face recognition technology; and use Blockchain technology and Encryption
+                        techniques to ensure transparency, security, and immutability of votes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add your JavaScript links here -->
+</body>
+
+</html>

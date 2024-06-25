@@ -1,0 +1,99 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.background-image {
+    background-color: #F5E8DD;
+    /* background-image: url('bg.png'); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: black;
+    text-align: center;
+}
+
+.navbar-custom {
+    background-color: #B5C0D0;
+    width: 100%;
+}
+
+.container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+form .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+form label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+form input,
+form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+form button {
+    margin-top: 20px;
+    background-color: #1658aa;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #134385;
+}
+
+.row.justify-content-center {
+    margin-top: 50px;
+}
+
+.candidates-details {
+    background-color: #CCD3CA;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+    color: #FF7F11;
+    margin-bottom: 20px;
+}
+
+.already-account {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.already-account a {
+    color: white;
+}
+
+.already-account a:hover {
+    color: #FF7F11;
+}
